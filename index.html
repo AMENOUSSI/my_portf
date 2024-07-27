@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--First Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+
+    <!--Second Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="font-nunito">
+    <!--Intro section-->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-blue-600 dark:from-slate-900 dark:to-slate-900 relative overflow-hidden">
+
+        
+        <nav class="w-full fixed top-0 bg-white  dark:bg-slate-900">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    
+                    <span class="text-2xl font-bold text-blue-500 dark:text-indigo-700 dark:text-4xl  font-lobster">JulesDev</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold uppercase>
+                    <li class="hover:text-gray-500">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#about">About me</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#works">Works</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#contact">Contanct</a>
+                    </li>
+                   
+                     
+                </ul>
+                <img id="moon" class="hidden md:block w-5 cursor-pointer" src="./img/bana.jpeg" alt="">
+
+                <div id="humberger" class="space-y-1 md:hidden cursor-pointer z-10">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+
+                <ul id="menu" class="hidden bg-indigo-800 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center ">
+                    <li>
+                        <a id="hLink" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#works">Works</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Intro-->
+        <!--Image-->
+        <img class="absolute bottom-20 right-0 lg:left-0 mx-auto h-5/6 object-cover " src="./img/julesBe.png" alt="">
+        <div class="hidden lg:block absolute py-10 -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-red-600 rounded-full -z-10"></div>
+
+        <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl">
+            <span class="text-gray-600 left-5 text-6xl font-bold">
+                Freelance
+            </span>
+            <p id="text" class="text-red-500 sm:text-2xl md:text-4xl lg:text-4xl font-bold "></p>
+        </div>
+
+        <!--text-->
+        <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-blue-500 absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3">
+            <h1 class="text-4xl text-indigo-900 font-bold">Hi, I'm Jules</h1>
+        <p class="text-gray-500">
+            I am fullstack developer. Bellow are the technologies I use for my projects: for the backend including the Api. 
+            I use Vue Js for UI. For mobile applications, I use. I am available for any developpment project.
+        </p>
+        <a class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit" href="#contant">Hire Me</a>
+        </div>
+    </div>
+
+    <!--about section-->
+    <div id="about" class="px-10  dark:bg-slate-900">
+        <div class="container mx-auto  flex flex-col-reverse lg:flex-row items-center py-40 gap-20">
+            <!--left side-->
+            <div class="relative">
+                <img class="w-1/4 h-1/4 absolute top-0 left-0 -z-10" src="./img/dotimages/dot1.jpeg" alt="dotimage">
+                <div class="h-full rounded-full overflow-hidden">
+                    <img class="bg-zinc-300" src="./img/jules2.png" alt="">
+                </div>
+            </div>
+            
+            <!--right side-->
+            <div class="my-auto flex flex-col gap-3">
+               <h1 class="text-indigo-600 font-bold ">ABOUT ME</h1>
+               <h1 class="text-3xl font-medium dark:text-white">Design</h1>
+               <h1 class="text-3xl font-medium dark:text-white">Better Expereince</h1>
+               <p class="text-gray-400 dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Tempore quasi unde enim, recusandae nam labore officiis odio vel 
+                ipsum quia sint necessitatibus laborum itaque 
+                molestias maiores laboriosam laudantium ab repudiandae.
+            </p>
+            <h2 class="text-gray-400 font-medium dark:text-white">HTML</h2>
+            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-full bg-indigo-600 h-1.5 rounded-md "></div>
+            </div>
+            
+            <h2 class="text-gray-400 font-medium">PHP</h2>
+            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-2/6 bg-indigo-600 h-1.5 rounded-md "></div>
+            </div>
+            <h2 class="text-gray-400 font-medium">Javascript</h2>
+            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-1/6 bg-indigo-600 h-1.5 rounded-md "></div>
+            </div>
+            <h2 class="text-gray-400 font-medium">Laravel</h2>
+            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md "></div>
+            </div>
+            <h2 class="text-gray-400 font-medium">VueJs</h2>
+            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-2/6 bg-indigo-600 h-1.5 rounded-md "></div>
+            </div>
+            <h2 class="text-gray-400 font-medium dark:text-white">Flutter</h2>
+            <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-1/6 bg-indigo-600 h-1.5 rounded-md "></div>
+            </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+    <!--Services-->
+    <div id="services" class="dark:bg-slate-900">
+        <div class="container mx-auto  ">
+            <!--top-->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold ">SERVICES</h1>
+                <h1 class="text-3xl dark:text-white">What do I offer?</h1>
+                <p class="w-1/2 items-center text-gray-400 dark:text-white">
+                    I help designers, small agencies and business bring their ideas to life. 
+                    I develop websites, web applications and I'm junior flutter developer.
+                </p>
+                <!--bottom-->
+            </div>
+            <!--card-->
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/dotimages/dot2.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small busineses.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/dotimages/dot3.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small busineses.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/dotimages/dot4.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small busineses.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/dotimages/dot6.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small busineses.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/dotimages/dot5.jpeg" alt="">
+                    <h1 class="font-medium text-lg">UX / UI Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small busineses.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/dotimages/dot7.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites for individuals and small busineses.</p>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--portfolio-->
+    <div id="works" class="py-40  dark:bg-slate-900">
+        <div class="container mx-auto">
+            <!--top-->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold">Portfolio</h1>
+                <h1 class="text-3xl dark:text-white">Works & Projects?</h1>
+                <p class="w-1/2 items-center text-gray-400 dark:text-white">
+                    These are the projects I've realized
+                </p>
+                <!--bottom-->
+            </div>
+            <!--card-->
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/logos/laravel.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Appli-Bonus</h1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/logos/react.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">React CRUD App</h1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10 " src="./img/logos/angular.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Products Management</h1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/logos/php.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Student inscription Api</h1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg  dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/logos/mysql.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Mysql database</h1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+                <!--card-->
+                <div class="w-full md:w-4/12 shadow-lg dark:shadow-slate-800 rounded-lg p-5 my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/logos/vuejs.jpeg" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Vue Js Project</h1>
+                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--contact-->
+    <div class="dark:bg-slate-900">
+        <div id="contact" class="container mx-auto  ">
+            <div class="flex flex-col gap items-center">
+                <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+                    <h1 class="text-3xl dark:text-white">Have a question?</h1>
+                    <p class="w-1/2 items-center text-gray-400 dark:text-white">
+                        I help designers, small agencies and business bring their ideas to life. 
+                        I develop websites, web applications and I'm junior flutter developer
+                    </p>
+            </div>
+            <!--form-->
+            <form class="mt-5 p-8 flex flex-col gap-5 items-center" action="">
+                <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white" type="text" name="" id="" placeholder="Name Surname">
+                <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white" type="text" name="" id="" placeholder="Email">
+                <textarea class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white" cols="30" rows="10" placeholder="Message" id=""></textarea>
+                <button type="submit" class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <!--footer-->
+    <div class="w-full top-0 bg-gray-800 ">
+        <div class="container mx-auto py-5 flex items-center justify-end">
+            
+            <span class="text-white ">&copy;2024 JulesDev, all right riserved</span>
+
+            
+
+            
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="/autoTyping.js"></script>
+
+</body>
+
+</html>
